@@ -20,11 +20,13 @@ public class Mario extends MovingImage {
 	}
 
 	public void jump() {
-		// JUMP!
+		if (onASurface) {
+			yVelocity -= jumpStrength;
+		}
 	}
 
 	public void act(ArrayList<Shape> obstacles) {
-		// FINISH ME!
+		super.y++
 	}
 
 
